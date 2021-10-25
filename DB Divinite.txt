@@ -1,0 +1,69 @@
+drop database DIVINITE;
+CREATE DATABASE DIVINITE;
+
+
+CREATE TABLE IF NOT EXISTS DIVINITE.usuarios(
+ cliente_id INT NOT NULL AUTO_INCREMENT,
+ cel BIGINT(25) NOT NULL, 
+ nombre VARCHAR(100) NOT NULL,
+ email VARCHAR(255) NOT NULL,
+ contraseña VARCHAR(40) NOT NULL,
+ cumple VARCHAR(12) NOT NULL,
+ genero VARCHAR(15) NOT NULL,
+ foto_perfil VARCHAR(2000) ,
+ fecha_registro DATETIME NOT NULL,
+ 
+ PRIMARY KEY (cliente_id)
+) ENGINE=innodb;
+insert into divinite.usuarios( `cel`, `nombre`,`email`, `contraseña`, `cumple`, `genero`,`foto_perfil`, `fecha_registro`) VALUES ( '3222638841', 'Candy Pacheco', 'Candy4@gmail.com', 'sdverwetgerfq', '15/08/1998', 'M','', CURDATE()); 
+insert into divinite.usuarios( `cel`, `nombre`,`email`, `contraseña`, `cumple`, `genero`,`foto_perfil`, `fecha_registro`) VALUES ( '3222638841', 'Rafael Salcedo', 'rafa22524@gmail.com', 'sdvdfgbsdferfq', '11/05/1995', 'H','', CURDATE()); 
+insert into divinite.usuarios( `cel`, `nombre`,`email`, `contraseña`, `cumple`, `genero`,`foto_perfil`, `fecha_registro`) VALUES ( '3222638841', 'Chrstian', 'Chris@gmail.com', 'sdvgfetgerfq', '12/10/1998', 'H','', CURDATE()); 
+insert into divinite.usuarios( `cel`, `nombre`,`email`, `contraseña`, `cumple`, `genero`,`foto_perfil`, `fecha_registro`) VALUES ( '3222638841', 'Ivar', 'ivar@gmail.com', 'sdverweggerfq', '14/08/1994', 'H','', CURDATE()); 
+CREATE TABLE IF NOT EXISTS DIVINITE.productos(
+product_id INT NOT NULL AUTO_INCREMENT,
+nombre_servicio VARCHAR(259) NOT NULL,
+categoria_servicio VARCHAR(50) NOT NULL,
+descripcion TEXT (4000) NOT NULL,
+duracion_servicio int NOT NULL,
+precio INT NOT NULL,
+img VARCHAR(2000) ,
+PRIMARY KEY (product_id)
+)ENGINE=innodb;
+
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUES ('GELISH LISO', 'nails', 'APLICACIÓN DE ESMALTE EN GEL SEMIPERMANENTE EN UÑA NATURAL CON  TERMINADO EN ALTO BRILLO', '30', '150','');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUES ('GELISH FRANCÉS', 'nails', 'APLICACIÓN DE ESMALTE SEMIPERMANENTE  EN BASE TRANSPARENTE DE UÑA NATURAL,  CON LA PUNTA EN COLOR BLANCO O  CUALQUIER OTRO COLOR DE LA GAMA', '60 ', '280', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('GELISH MATE', 'nails', 'APLICACIÓN DE ESMALTE SEMIPERMANENTE  EN GEL EN UÑA NATURAL CON TERMINADO  EN MATE', '35 ', '180', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('GELISH FRANCÉS CON BASE  COLOR', 'nails', 'APLICACIÓN DE ESMALTE SEMIPERMANENTE  EN BASE NUDE O EN COLOR ELEGIDO, CON LA  PUNTA EN COLOR BLANCO O CUALQUIER  OTRO COLOR DE LA GAMA', '60 ', '3000', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('Cavitación', 'Cuidado de la piel', 'Es un tratamiento indoloro donde se emplean ultrasonidos de baja frecuencia sobre la zona donde se ha localizado la grasa, rompiendo así la membrana celular de los adipocitos, favoreciendo a la eliminación de la grasa localizada y mejorando el aspecto de la piel de naranja', '60', '300', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('Carboxiterapia', 'Cuidado de la piel', 'Ayuda a eliminar la celulitis, estrías, grasa localizada y la flacidez de la piel, esto debido a que el gas carbónico inyectado estimula la circulación celular y la oxigenación de los tejidos', '60', '450', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('Pestañas clásicas (1x1)', 'Pestañas y cejas', 'Técnica clásica de 1 por 1, para lucir una mirada muy natural', '120', '850', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('Pestañas híbridas', 'Pestañas y cejas', 'Técnica 3d, para añadir un volumen medio a tu pestaña, elige el largo!', '120', '1200', '');
+INSERT INTO divinite.productos( `nombre_servicio`, `categoria_servicio`, `descripcion`,`duracion_servicio`, `precio`, `img`) VALUE ('Facial de radiofrecuencia', 'Faciales', 'Es una técnica que combate de manera efectiva la flacidez. Consiste en aplicar energía de radiofrecuencia para calentar las capas internas de la piel y regenerar el colágeno para lucir una piel firme y tersa', '60', '300', '');
+
+CREATE TABLE IF NOT EXISTS DIVINITE.orden(
+orden_id INT NOT NULL AUTO_INCREMENT,
+orden_date DATETIME NOT NULL,
+fecha_reserva VARCHAR(12)NOT NULL, 
+hora_reserva VARCHAR(5) NOT NULL,  
+cliente INT NOT NULL ,
+product INT NOT NULL ,
+PRIMARY KEY (orden_id),
+
+FOREIGN KEY(cliente) REFERENCES usuarios(cliente_id)
+ON DELETE CASCADE ON UPDATE CASCADE,
+
+FOREIGN KEY(product) REFERENCES productos(product_id)
+ON DELETE CASCADE ON UPDATE CASCADE
+
+) ENGINE=innodb;
+
+
+CREATE TABLE IF NOT EXISTS DIVINITE.empleados(
+empleados_id INT NOT NULL AUTO_INCREMENT,
+nombre VARCHAR(100) NOT NULL,
+email VARCHAR(255) NOT NULL,
+password VARCHAR(40) NOT NULL,
+PRIMARY KEY(empleados_id)
+
+)ENGINE=innodb;
+INSERT INTO divinite.empleados(`nombre`,`email`,`password`)VALUE('Administrador','administratordivinité@gmail.com','Administrator1');
