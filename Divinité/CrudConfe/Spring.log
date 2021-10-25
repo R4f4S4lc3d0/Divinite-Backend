@@ -1,0 +1,58 @@
+2021-10-22 00:01:20.830  INFO 8912 --- [main] com.sv.CrudConfeApplication              : Starting CrudConfeApplication on LAPTOP-VMUO0N3L with PID 8912 (C:\Users\Rafa Salcedo\Downloads\Recursos\Proyecto\CrudConfe\target\classes started by Rafa Salcedo in C:\Users\Rafa Salcedo\Downloads\Recursos\Proyecto\CrudConfe)
+2021-10-22 00:01:20.847  INFO 8912 --- [main] com.sv.CrudConfeApplication              : No active profile set, falling back to default profiles: default
+2021-10-22 00:01:22.173  INFO 8912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-22 00:01:22.412  INFO 8912 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 221ms. Found 3 JPA repository interfaces.
+2021-10-22 00:01:23.660  INFO 8912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 00:01:23.716  INFO 8912 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 00:01:23.716  INFO 8912 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-10-22 00:01:23.987  INFO 8912 --- [main] o.a.c.c.C.[.[localhost].[/ApiRest]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 00:01:23.988  INFO 8912 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3031 ms
+2021-10-22 00:01:24.251  INFO 8912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-22 00:01:24.988  INFO 8912 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-22 00:01:25.103  INFO 8912 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-22 00:01:25.339  INFO 8912 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2021-10-22 00:01:25.342  INFO 8912 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-10-22 00:01:25.691  INFO 8912 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-22 00:01:25.940  INFO 8912 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-22 00:01:26.783  INFO 8912 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 00:01:27.407  INFO 8912 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-22 00:01:27.468  WARN 8912 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-22 00:01:27.957  INFO 8912 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/ApiRest'
+2021-10-22 00:01:27.959  INFO 8912 --- [main] com.sv.CrudConfeApplication              : Started CrudConfeApplication in 7.926 seconds (JVM running for 8.77)
+2021-10-22 00:02:07.229  INFO 8912 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[localhost].[/ApiRest]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 00:02:07.229  INFO 8912 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 00:02:07.241  INFO 8912 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-10-22 00:02:07.356  INFO 8912 --- [http-nio-8080-exec-2] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-10-22 00:17:15.046  INFO 8912 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-10-22 00:17:15.048  INFO 8912 --- [Thread-2] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 00:17:15.052  INFO 8912 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-10-22 00:17:15.069  INFO 8912 --- [Thread-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-10-22 14:54:05.809  INFO 39696 --- [main] com.sv.CrudConfeApplication              : Starting CrudConfeApplication on LAPTOP-VMUO0N3L with PID 39696 (C:\Users\Rafa Salcedo\Downloads\Recursos\Proyecto\CrudConfe\target\classes started by Rafa Salcedo in C:\Users\Rafa Salcedo\Downloads\Recursos\Proyecto\CrudConfe)
+2021-10-22 14:54:05.816  INFO 39696 --- [main] com.sv.CrudConfeApplication              : No active profile set, falling back to default profiles: default
+2021-10-22 14:54:07.518  INFO 39696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-10-22 14:54:08.022  INFO 39696 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 484ms. Found 3 JPA repository interfaces.
+2021-10-22 14:54:09.996  INFO 39696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-10-22 14:54:10.080  INFO 39696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-10-22 14:54:10.082  INFO 39696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-10-22 14:54:10.479  INFO 39696 --- [main] o.a.c.c.C.[.[localhost].[/ApiRest]       : Initializing Spring embedded WebApplicationContext
+2021-10-22 14:54:10.480  INFO 39696 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4530 ms
+2021-10-22 14:54:10.954  INFO 39696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-10-22 14:54:12.337  INFO 39696 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-10-22 14:54:12.465  INFO 39696 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-10-22 14:54:12.769  INFO 39696 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.17.Final}
+2021-10-22 14:54:12.771  INFO 39696 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-10-22 14:54:13.270  INFO 39696 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-10-22 14:54:13.665  INFO 39696 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-10-22 14:54:14.975  INFO 39696 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-10-22 14:54:15.870  INFO 39696 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-10-22 14:54:15.951  WARN 39696 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-10-22 14:54:16.671  INFO 39696 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/ApiRest'
+2021-10-22 14:54:16.674  INFO 39696 --- [main] com.sv.CrudConfeApplication              : Started CrudConfeApplication in 12.094 seconds (JVM running for 13.469)
+2021-10-22 14:54:39.416  INFO 39696 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[localhost].[/ApiRest]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-10-22 14:54:39.417  INFO 39696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-10-22 14:54:39.429  INFO 39696 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2021-10-22 14:54:46.603  INFO 39696 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
